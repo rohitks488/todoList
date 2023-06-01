@@ -41,8 +41,8 @@ function TodoList() {
     };
 
     return (
-        <>
-            <h1>What's the Plan for Today?</h1>
+        <div className="min-h-screen bg-gradient-to-b from-black to-purple-950">
+            <h1 className="flex justify-center p-5 font-bold">What's the Plan for Today?</h1>
             <TodoForm onSubmit={addTodo} />
             <Todo
                 todos={todos}
@@ -50,7 +50,7 @@ function TodoList() {
                 removeTodo={removeTodo}
                 updateTodo={updateTodo}
             />
-        </>
+        </div>
     );
 }
 
